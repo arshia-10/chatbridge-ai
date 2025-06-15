@@ -1,5 +1,3 @@
-# llm/gpt_responder.py
-
 import subprocess
 
 def get_ai_reply(prompt: str) -> str:
@@ -13,4 +11,4 @@ def get_ai_reply(prompt: str) -> str:
         )
         return result.stdout.decode("utf-8").strip()
     except Exception as e:
-        return f"❌ Error: {str(e)}"
+        return f"Error: {str(e)}"
